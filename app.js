@@ -8,9 +8,9 @@ const port = 3000;
 
 const postRouter = require('./Router/postRouter')
 
+app.use(express.json());
+
 app.use('/', postRouter);
-
-
 
 //configuração da porta do servidor
 app.listen(port, () => {
